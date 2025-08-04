@@ -12,8 +12,7 @@ def index_docs(folder):
     vectordb = VectorDB()
 
     docs = load_pdfs(folder)
-    print(docs)
-    for doc in tqdm(docs):
+    for doc in tqdm(docs):  
         chunks = chunk_text(doc["text"])
         embeddings = embedder.embed(chunks)
         ids = [generate_id() for _ in chunks]

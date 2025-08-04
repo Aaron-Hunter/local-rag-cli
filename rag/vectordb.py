@@ -1,8 +1,10 @@
 import chromadb
+import os
 
 class VectorDB:
-    def __init__(self, persist_dir="db"):
-        self.client = chromadb.Client()
+    def __init__(self):
+        current_dir = os.getcwd()
+        self.client = chromadb.PersistentClient(path=f"{current_dir}/db")
         self.collection = self.client.get_or_create_collection("rag_docs")
 
     def add(self, ids, texts, embeddings, metadatas):
