@@ -7,4 +7,4 @@ python main.py index --folder ./my-pdf-folder
 to query the indexed files:
 python main.py query --question "What is a good question for your specific PDFs?"
 
-![Example of RAG CLI program with question and answer](.\static\RAG_CLI_example.png)
+![Example of RAG CLI program with question and answer](./static/RAG_CLI_example.png)
