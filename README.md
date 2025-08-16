@@ -2,6 +2,8 @@
 
 To Run:
 - Ollama must be running llama3.1:8b
+- Create and activate a python venv
+- pip install -r requirements.txt
 to index the files (run initially):
 python main.py index --folder ./my-pdf-folder
 to query the indexed files:
