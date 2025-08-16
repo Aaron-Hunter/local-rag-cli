@@ -1,12 +1,16 @@
 # local-rag-cli
 
-To Run:
+Prerequisites:
 - Ollama must be running llama3.1:8b
 - Create and activate a python venv
 - pip install -r requirements.txt
-to index the files (run initially):
+
+To index the files (run initially):
+
 python main.py index --folder ./my-pdf-folder
-to query the indexed files:
+
+To query the indexed files:
+
 python main.py query --question "What is a good question for your specific PDFs?"
 
-![Example of RAG CLI program with question and answer](C:\Users\Aaron\local-rag-cli\static\RAG_CLI_example.png)
+![Example of RAG CLI program with question and answer](./static/RAG_CLI_example.png)
